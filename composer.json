@@ -31,6 +31,5 @@
                 "DataTablesRender": "TodoProgramacion\\DataTablesRender\\Facade"
             }
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
