@@ -1,0 +1,37 @@
+{
+    "name": "todoprogramacion/datatables-render",
+    "description": "This package allows to easily render an answer with a collection of data to be used in jQuery DataTables",
+    "license": "MIT",
+    "keywords": ["todoprogramacion", "datatables", "render"],
+    "type": "project",
+    "authors": [
+        {
+            "name": "Eborio Linárez",
+            "email": "contacto@todoprogramacion.com.ve",
+            "homepage": "http://todoprogramacion.com.ve"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": ">=5.0.0",
+        "illuminate/database": ">=5.0.0",
+        "illuminate/queue": ">=5.0.0",
+        "ixudra/curl": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TodoProgramacion\\DatatablesRender\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TodoProgramacion\\DataTablesRender\\ServiceProvider"
+            ],
+            "aliases": {
+                "DataTablesRender": "TodoProgramacion\\DataTablesRender\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
