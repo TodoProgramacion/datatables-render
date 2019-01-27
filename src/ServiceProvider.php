@@ -29,9 +29,9 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(DataTablesRender::class, function()
+        $this->app->singleton(Render::class, function()
         {
-            return new DataTablesRender();
+            return new Render();
         });
     }
 
