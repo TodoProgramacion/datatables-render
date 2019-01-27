@@ -2,7 +2,7 @@
 
 namespace TodoProgramacion\DataTablesRender\Facades;
 
-use TodoProgramacion\DataTablesRender\DataTablesRender;
+use TodoProgramacion\DataTablesRender\Render;
 
 /**
  * Class DataTablesRender
@@ -21,6 +21,6 @@ class Facade extends \Illuminate\Support\Facades\Facade
      */
     protected static function getFacadeAccessor()
     {
-        return DataTablesRender::class;
+        return Render::class;
     }
 }
