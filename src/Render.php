@@ -17,16 +17,15 @@ class Render
      *
      * @param int $draw Rendered page
      * @param int $recordsTotal Total records
-     * @param int $recordsFiltered Total records filtered
      * @param array $data DataTable data
      * @return array
      */
-    public static function make($draw, $recordsTotal, $recordsFiltered, $data)
+    public static function make($draw, $recordsTotal, $data)
     {
         $response = [
             'draw' => intval($draw),
             'recordsTotal' => intval($recordsTotal),
-            'recordsFiltered' => intval($recordsFiltered),
+            'recordsFiltered' => intval($recordsTotal),
             'data' => $data
         ];
         return $response;
